@@ -1,0 +1,22 @@
+@charset "ISO-8859-1";
+
+body {
+	background-color: #967feb;
+}
+
+hr {
+	height: 1px;
+	background: white;
+}
+
+.user {
+	margin-top: 40px;
+}
+
+.list-user {
+	text-align: center;
+	color: black;
+	font-size: 2rem;
+	border-radius: 5px;
+	background-color: white;
+}

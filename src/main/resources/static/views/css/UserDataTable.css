@@ -1,0 +1,50 @@
+table.dataTable.display tbody tr.odd > .sorting_1, table.dataTable.order-column.stripe tbody tr.odd > .sorting_1 {
+	background-color: #c6a9f5;
+}
+table.dataTable.display tbody tr.even > .sorting_1, table.dataTable.order-column.stripe tbody tr.even > .sorting_1 {
+	background-color:#8742f5 ;
+}
+table.dataTable.display tbody tr:nth-child(even) td {
+	text-align: center;
+	background-color: #8742f5;
+}
+table.dataTable.display tbody tr:nth-child(odd) td {
+	text-align: center;
+	background-color: #c6a9f5;
+}
+table.dataTable thead th, table.dataTable thead td {
+	text-align: center;
+	background-color: burlywood;
+}
+#tableID{
+	border-radius: 4px;
+	border:2px solid black; 
+	margin-bottom: 10px;
+}
+.mytable{
+	border-collapse: collapse;
+	text-align: center;
+	margin-top: 10px;
+}
+td, th {
+	border: 2px solid black;
+	text-align: left;
+	padding: 8px;
+}
+.showtable{
+	margin:auto; 
+	border-collapse: collapse;
+	border:2px solid black; 
+}
+.showtable th{
+	background-color: burlywood;
+}
+.showtable tr:nth-child(even) td {
+	background-color:#8742f5;
+}
+.showtable tr:nth-child(odd) td {
+	background-color:#c6a9f5;
+}
+.dataTables_wrapper .dataTables_filter {
+  margin-bottom: 6px;
+}
