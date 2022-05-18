@@ -1,10 +1,11 @@
+<#import "/spring.ftl" as spring />
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Admin Page</title>
 
 <!-- TAB icon/Favicon -->
-<style><#include "images/icons/favicon.ico"></style>
+
 
 <!-- BootStrap Link -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -14,13 +15,8 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
 
 <!-- 	Custom CSS Link -->
-<style>
-<#include "css/admin.css">
-</style>
-
-<style>
-<#include "css/UserDataTable.css">
-</style>
+<link href="<@spring.url 'views/css/admin.css' />" rel="stylesheet">
+<link href="<@spring.url 'views/css/UserDataTable.css' />" rel="stylesheet">
 
 </head>
 
@@ -76,9 +72,6 @@
 			</table>
 		
 
-	<!-- 	<button id="mybtn">Click</button> -->
-
-
 	<!-- jQuery File -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -86,10 +79,7 @@
 	<script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 	
-	<script type="text/javascript">
-	<#include "js/showUser.js">
-	</script>
-
+	<script src="<@spring.url 'views/js/showUser.js' />"> </script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 

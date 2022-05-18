@@ -9,7 +9,7 @@ public class SpringBootTaskApplication {
 	public static void main(String[] args) {
 
 		SpringApplication.run(SpringBootTaskApplication.class, args);
-
 	}
-
+	
 }
+	

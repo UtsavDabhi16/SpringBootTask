@@ -5,12 +5,13 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Login Page </title>
-<link href="<@spring.url 'css/util.css' />" rel="stylesheet">
-<link href="<@spring.url 'css/main.css' />" rel="stylesheet">
-<link href="<@spring.url 'css/custom.css' />" rel="stylesheet">
+<link href="<@spring.url 'views/css/util.css' />" rel="stylesheet">
+<link href="<@spring.url 'views/css/main.css' />" rel="stylesheet">
+<link href="<@spring.url 'views/css/custom.css' />" rel="stylesheet">
 </head>
 <body>
 	<!-- Include the Header file -->
+	
 	<#include "header.ftl">
 	
 	<div class="limiter">
@@ -61,18 +62,19 @@
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
-	<script src="<@spring.url '/views/vendor/jquery/jquery-3.2.1.min.js' />"> </script>
-	<script src="<@spring.url '/views/vendor/jquery/formToJson.js' />"> </script>
-	<script src="<@spring.url '/views/vendor/animsition/js/animsition.min.js' />"> </script>
-	<script src="<@spring.url '/views/vendor/bootstrap/js/popper.js' />"> </script>
-	<script src="<@spring.url '/views/vendor/bootstrap/js/bootstrap.min.js' />"> </script>
-	<script src="<@spring.url '/views/vendor/select2/select2.min.js' />"> </script>
-	<script src="<@spring.url '/views/vendor/daterangepicker/moment.min.js' />"> </script>
-	<script src="<@spring.url '/views/vendor/daterangepicker/daterangepicker.js' />"> </script>
-	<script src="<@spring.url '/views/vendor/countdowntime/countdowntime.js' />"> </script>
-	<script src="<@spring.url '/views/js/login.js' />"> </script>
+	<script src="<@spring.url 'views/vendor/jquery/jquery-3.2.1.min.js' />"> </script>
+	<script src="<@spring.url 'views/vendor/jquery/formToJson.js' />"> </script>
+	<script src="<@spring.url 'views/vendor/animsition/js/animsition.min.js' />"> </script>
+	<script src="<@spring.url 'views/vendor/bootstrap/js/popper.js' />"> </script>
+	<script src="<@spring.url 'views/vendor/bootstrap/js/bootstrap.min.js' />"> </script>
+	<script src="<@spring.url 'views/vendor/select2/select2.min.js' />"> </script>
+	<script src="<@spring.url 'views/vendor/daterangepicker/moment.min.js' />"> </script>
+	<script src="<@spring.url 'views/vendor/daterangepicker/daterangepicker.js' />"> </script>
+	<script src="<@spring.url 'views/vendor/countdowntime/countdowntime.js' />"> </script>
+	<script src="<@spring.url 'views/js/login.js' />"> </script>
 	
 	<!-- Include the Footer file   -->
 	<#include "footer.ftl">
+	
 </body>
 </html>

@@ -1,12 +1,10 @@
-<!DOCTYPE html>
+<#import "/spring.ftl" as spring />
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <head><meta charset="ISO-8859-1">	
 <title>Header Page</title>
-<style>
-<#include "css/header.css">
-</style>
+<link href="<@spring.url 'views/css/header.css' />" rel="stylesheet">
 </head>
 <body>
 <header>

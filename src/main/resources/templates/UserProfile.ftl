@@ -1,22 +1,20 @@
-<!DOCTYPE html>
+<#import "/spring.ftl" as spring />
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 
-<style>
-<#include "css/util.css">
-<#include "css/main.css">
-<#include "css/custom.css">
-<#include "images/icons/favicon.ico">
-<#include "vendor/bootstrap/css/bootstrap.min.css">
-<#include "fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<#include "vendor/animate/animate.css">
-<#include "vendor/css-hamburgers/hamburgers.min.css">
-<#include "vendor/animsition/css/animsition.min.css">
-<#include "vendor/select2/select2.min.css">
-<#include "vendor/daterangepicker/daterangepicker.css">
-</style>
+<link href="<@spring.url 'views/css/main.css' />" rel="stylesheet">
+<link href="<@spring.url 'views/css/util.css' />" rel="stylesheet">
+<link href="<@spring.url 'views/css/custom.css' />" rel="stylesheet">
+<link href="<@spring.url 'views/fonts/font-awesome-4.7.0/css/font-awesome.min.css' />" rel="stylesheet">
+<link href="<@spring.url 'views/vendor/bootstrap/css/bootstrap.min.css' />" rel="stylesheet">
+<link href="<@spring.url 'views/vendor/animate/animate.css' />" rel="stylesheet">
+<link href="<@spring.url 'views/vendor/css-hamburgers/hamburgers.min.css' />" rel="stylesheet">
+<link href="<@spring.url 'views/vendor/animsition/css/animsition.min.css' />" rel="stylesheet">
+<link href="<@spring.url 'views/vendor/select2/select2.min.css' />" rel="stylesheet">
+<link href="<@spring.url 'views/vendor/daterangepicker/daterangepicker.css' />" rel="stylesheet">
+
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
@@ -127,26 +125,21 @@
 			</div>	
 	
 	<!-- jQuery File -->
-
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script>
-	<#include "vendor/jquery/jquery-3.2.1.min.js">
-	<#include "vendor/jquery/jquery.validate.min.js">
-	<#include "vendor/animsition/js/animsition.min.js">
-	<#include "vendor/bootstrap/js/popper.js">
-	<#include "vendor/bootstrap/js/bootstrap.min.js">
-	<#include "vendor/select2/select2.min.js">
-	<#include "vendor/daterangepicker/moment.min.js">
-	<#include "vendor/daterangepicker/daterangepicker.js">
-	<#include "vendor/countdowntime/countdowntime.js">
-	</script>
-	<script type="text/javascript">
-		<#include "js/cloneData.js">
-	</script>
-
-	<script type="text/javascript">
-		<#include "js/AddressPlugin.js">
-	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+	<script src="<@spring.url 'views/vendor/jquery/jquery-3.2.1.min.js' />"> </script>
+	<script src="<@spring.url 'views/vendor/jquery/formToJson.js' />"> </script>
+	<script src="<@spring.url 'views/vendor/animsition/js/animsition.min.js' />"> </script>
+	<script src="<@spring.url 'views/vendor/bootstrap/js/popper.js' />"> </script>
+	<script src="<@spring.url 'views/vendor/bootstrap/js/bootstrap.min.js' />"> </script>
+	<script src="<@spring.url 'views/vendor/select2/select2.min.js' />"> </script>
+	<script src="<@spring.url 'views/vendor/daterangepicker/moment.min.js' />"> </script>
+	<script src="<@spring.url 'views/vendor/daterangepicker/daterangepicker.js' />"> </script>
+	<script src="<@spring.url 'views/vendor/countdowntime/countdowntime.js' />"> </script>
+	<script src="<@spring.url 'views/js/cloneData.js' />"> </script>
+	<script src="<@spring.url 'views/js/AddressPlugin.js' />"> </script>
+	
 
 		<!-- Include the Footer file -->
 	<#include "footer.ftl">
