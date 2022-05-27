@@ -23,82 +23,45 @@
 	</properties>
 
 	<dependencies>
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
-=======
->>>>>>> 319f966123046e744cfd32eaed0b6f2eb34bd831
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-		
->>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
-=======
->>>>>>> 319f966123046e744cfd32eaed0b6f2eb34bd831
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-freemarker</artifactId>
 		</dependency>
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-		
->>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
-=======
->>>>>>> 319f966123046e744cfd32eaed0b6f2eb34bd831
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
-<<<<<<< HEAD
-		
-<<<<<<< HEAD
-		
-=======
->>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
-=======
->>>>>>> 319f966123046e744cfd32eaed0b6f2eb34bd831
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-			 <version>2.6.7</version>
+			<version>2.6.7</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
-<<<<<<< HEAD
 			<scope>provided</scope>
 		</dependency>
-<<<<<<< HEAD
+	</dependency>
 
-=======
-		
->>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
-=======
-		</dependency>	
->>>>>>> 319f966123046e744cfd32eaed0b6f2eb34bd831
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-<<<<<<< HEAD
+
 			<exclusions>
 				<exclusion>
 					<groupId>org.junit.vintage</groupId>
 					<artifactId>junit-vintage-engine</artifactId>
 				</exclusion>
 			</exclusions>
-=======
->>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
+
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -113,15 +76,7 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.29</version>
 		</dependency>
-<<<<<<< HEAD
 
-<<<<<<< HEAD
-
-=======
-		
->>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
-=======
->>>>>>> 319f966123046e744cfd32eaed0b6f2eb34bd831
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
@@ -148,33 +103,28 @@
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
 		</dependency>
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 
 		<dependency>
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
-=======
-		
-=======
->>>>>>> 319f966123046e744cfd32eaed0b6f2eb34bd831
-		<dependency>
-		    <groupId>jstl</groupId>
-		    <artifactId>jstl</artifactId>
-		    <version>1.2</version>
->>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
-		</dependency>
-		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-			<version>1.2.17</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.maven.doxia</groupId>
-			<artifactId>doxia-site-renderer</artifactId>
-			<version>1.8.1</version>
-		</dependency>
+			<dependency>
+				<groupId>jstl</groupId>
+				<artifactId>jstl</artifactId>
+				<version>1.2</version>
+
+			</dependency>
+			<dependency>
+				<groupId>log4j</groupId>
+				<artifactId>log4j</artifactId>
+				<version>1.2.17</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.maven.doxia</groupId>
+				<artifactId>doxia-site-renderer</artifactId>
+				<version>1.8.1</version>
+			</dependency>
 	</dependencies>
 
 	<build>
