@@ -1,0 +1,19 @@
+#server:
+#  port:
+#    8877
+#spring:
+#  application:
+#    name: SpringBootTaskApplication
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3307/springbootemptask?createDatabaseIfNotExist=true
+#    username: root
+#    password: pass
+#   
+#  jpa:
+#    database: MYSQL
+#    show-sql: 'true'
+#    database-platform: org.hibernate.dialect.MySQL8Dialect
+#    hibernate:
+#      ddl-auto: update
+ 
