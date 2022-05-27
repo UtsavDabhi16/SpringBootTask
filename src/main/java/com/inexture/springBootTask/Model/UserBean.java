@@ -10,8 +10,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+<<<<<<< HEAD
 import javax.validation.constraints.NotEmpty;
 
+=======
+>>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
 
 import org.springframework.stereotype.Component;
 
@@ -28,6 +31,7 @@ public class UserBean implements Serializable {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	@Expose
 	private int Userid;
+<<<<<<< HEAD
 	@NotEmpty(message = "Hello Firstname")
 	@Expose
 	private String FirstName;
@@ -56,6 +60,26 @@ public class UserBean implements Serializable {
 	@Expose
 	private String CPassword;
 	@NotEmpty(message = "New password")
+=======
+	@Expose
+	private String FirstName;
+	@Expose
+	private String LastName;
+	@Expose
+	private String Email;
+	@Expose
+	private String PhoneNo;
+	@Expose
+	private String Dob;
+	@Expose
+	private String gender;
+	@Expose
+	private String SecurityAnswer;
+	@Expose
+	private String Password;
+	@Expose
+	private String CPassword;
+>>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
 	@Expose
 	private String NewPassword;
 
@@ -70,7 +94,28 @@ public class UserBean implements Serializable {
 		// TODO Auto-generated constructor stub
 	}
 
+<<<<<<< HEAD
 	
+=======
+	public UserBean(int userid, String firstName, String lastName, String email, String phoneNo, String dob,
+			String gender, String securityAnswer, String password, String cPassword, String newPassword,
+			List<AddressBean> address) {
+		super();
+		Userid = userid;
+		FirstName = firstName;
+		LastName = lastName;
+		Email = email;
+		PhoneNo = phoneNo;
+		Dob = dob;
+		this.gender = gender;
+		SecurityAnswer = securityAnswer;
+		Password = password;
+		CPassword = cPassword;
+		NewPassword = newPassword;
+		this.address = address;
+	}
+
+>>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
 	
 	@Override
 	public String toString() {
@@ -160,9 +205,15 @@ public class UserBean implements Serializable {
 		CPassword = cPassword;
 	}
 
+<<<<<<< HEAD
 //	public String getNewPassword() {
 //		return NewPassword;
 //	}
+=======
+	public String getNewPassword() {
+		return NewPassword;
+	}
+>>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
 
 	public void setNewPassword(String newPassword) {
 		NewPassword = newPassword;

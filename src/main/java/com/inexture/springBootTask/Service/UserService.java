@@ -1,5 +1,6 @@
 package com.inexture.springBootTask.Service;
 
+<<<<<<< HEAD
 import java.io.UnsupportedEncodingException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
@@ -14,6 +15,14 @@ import com.inexture.springBootTask.Model.UserBean;
 public interface UserService {
 	
 	boolean registerUser(UserBean u) throws InvalidKeyException, NoSuchAlgorithmException, NoSuchPaddingException, IllegalBlockSizeException, BadPaddingException, UnsupportedEncodingException;
+=======
+import java.util.List;
+
+import com.inexture.springBootTask.Model.UserBean;
+
+public interface UserService {
+	boolean registerUser(UserBean u);
+>>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
 
 	UserBean getUserByEmail(String uemail);
 

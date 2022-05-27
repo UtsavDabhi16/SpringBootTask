@@ -25,6 +25,9 @@ public class FreeMarkerViewResolverConfig {
 		config.setTemplateLoaderPath("classpath:/templates");
 		return config;
 	}
+<<<<<<< HEAD
 	
 	
+=======
+>>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
 }

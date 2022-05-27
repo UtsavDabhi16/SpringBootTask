@@ -1,5 +1,6 @@
 package com.inexture.springBootTask.Service;
 
+<<<<<<< HEAD
 import java.io.UnsupportedEncodingException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
@@ -10,6 +11,10 @@ import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
 
+=======
+import java.util.List;
+
+>>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -39,7 +44,13 @@ public class UserServiceImpl implements UserService {
 	static final Logger log = Logger.getLogger(UserServiceImpl.class);
 
 	@Override
+<<<<<<< HEAD
 	public boolean registerUser(UserBean ubean) throws InvalidKeyException, NoSuchAlgorithmException, NoSuchPaddingException, IllegalBlockSizeException, BadPaddingException, UnsupportedEncodingException {
+=======
+	public boolean registerUser(UserBean ubean) {
+
+		try {
+>>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
 
 			List<AddressBean> address = ubean.getAddress();
 
@@ -49,6 +60,12 @@ public class UserServiceImpl implements UserService {
 
 			List<AssignBean> assign = ubean.getAssign();
 
+<<<<<<< HEAD
+=======
+			System.out.println("Assign Value size :" + assign);
+			System.out.println(assign.size());
+
+>>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
 			for (AssignBean role : assign) {
 				role.setUser(ubean);
 			}
@@ -61,12 +78,17 @@ public class UserServiceImpl implements UserService {
 			ubean.setPassword(password);
 			ubean.setCPassword(cpassword);
 			ubean.setAddress(address);
+<<<<<<< HEAD
 			
+=======
+			System.out.println("My assig is :" + assign);
+>>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
 			ubean.setAssign(assign);
 
 			userDao.save(ubean);
 
 			log.info("Inside User Register Service Method");
+<<<<<<< HEAD
 		
 		return true;
 	}
@@ -77,11 +99,28 @@ public class UserServiceImpl implements UserService {
 		
 		return userDao.getUserEmail(uemail);
 		
+=======
+			System.out.println(ubean);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return true;
+	}
+
+	@Override
+	public UserBean getUserByEmail(String uemail) {
+		UserBean ubean = userDao.getUserEmail(uemail);
+		return ubean;
+>>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
 	}
 
 	@Override
 	public int updateUser(UserBean user) {
+<<<<<<< HEAD
 		
+=======
+>>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
 		List<AddressBean> newAddress = user.getAddress();
 
 		List<Integer> aids = addressDao.getAddressIds(user.getUserid());
@@ -101,6 +140,11 @@ public class UserServiceImpl implements UserService {
 
 		if (aids.size() > 0) {
 			addressDao.deleteAllById(aids);
+<<<<<<< HEAD
+=======
+		} else {
+			log.debug("No addresses found to delete.");
+>>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
 		}
 
 		return 1;
@@ -109,8 +153,12 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public List<UserBean> showUser() {
+<<<<<<< HEAD
 		List<UserBean> userData=new ArrayList<UserBean>();
 		userDao.findAll().forEach(UserBean -> userData.add(UserBean));  
+=======
+		List<UserBean> userData = userDao.getAllUser();
+>>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
 		return userData;
 	}
 
@@ -128,18 +176,28 @@ public class UserServiceImpl implements UserService {
 			oldUserData.setCPassword(nPassword);
 			userDao.save(oldUserData);
 		}
+<<<<<<< HEAD
 
 		return 1;
+=======
+		return 1;
+	
+>>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
 		
 	}
 
 	@Override
 	public void resetPassword(String oldPass, String newPass, String cPass) {
+<<<<<<< HEAD
 
 		List<UserBean> userData=new ArrayList<UserBean>();
 //		List<UserBean> list = userDao.getAllUser();
 		userDao.findAll().forEach(UserBean -> userData.add(UserBean));  
 		for (UserBean l : userData) {
+=======
+		List<UserBean> list = userDao.getAllUser();
+		for (UserBean l : list) {
+>>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
 			if (l.getPassword()!= null && l.getPassword().equals(oldPass)) {
 				UserBean user = userDao.getUserEmail(l.getEmail());
 				user.setPassword(cPass);

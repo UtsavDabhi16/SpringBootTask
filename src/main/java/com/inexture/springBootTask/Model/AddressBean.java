@@ -19,7 +19,11 @@ public class AddressBean implements Serializable{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+<<<<<<< HEAD
 	int AddressId;
+=======
+	private int AddressId;
+>>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
 	private String AddressLineOne;
 	private String AddressLineTwo;
 	private String pincode;
@@ -27,13 +31,18 @@ public class AddressBean implements Serializable{
 	private String state;
 
 	@ManyToOne
+<<<<<<< HEAD
 	UserBean user;
+=======
+	private UserBean user;
+>>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
 
 	public AddressBean() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
+<<<<<<< HEAD
 //	public AddressBean(int addressId, String addressLineOne, String addressLineTwo, String pincode, String city,
 //			String state) {
 //		super();
@@ -57,6 +66,31 @@ public class AddressBean implements Serializable{
 //	public int getAddressId() {
 //		return AddressId;
 //	}
+=======
+	public AddressBean(int addressId, String addressLineOne, String addressLineTwo, String pincode, String city,
+			String state) {
+		super();
+		AddressId = addressId;
+		AddressLineOne = addressLineOne;
+		AddressLineTwo = addressLineTwo;
+		this.pincode = pincode;
+		this.city = city;
+		this.state = state;
+	}
+
+	public AddressBean(String addressLineOne, String addressLineTwo, String pincode, String city, String state) {
+		super();
+		AddressLineOne = addressLineOne;
+		AddressLineTwo = addressLineTwo;
+		this.pincode = pincode;
+		this.city = city;
+		this.state = state;
+	}
+	
+	public int getAddressId() {
+		return AddressId;
+	}
+>>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
 
 	public void setAddressId(int addressId) {
 		AddressId = addressId;
@@ -102,9 +136,15 @@ public class AddressBean implements Serializable{
 		this.state = state;
 	}
 
+<<<<<<< HEAD
 //	public UserBean getUser() {
 //		return user;
 //	}
+=======
+	public UserBean getUser() {
+		return user;
+	}
+>>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
 
 	public void setUser(UserBean User)  {
 		this.user = User;

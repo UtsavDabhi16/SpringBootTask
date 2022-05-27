@@ -21,11 +21,19 @@ public class AssignBean implements Serializable{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
+<<<<<<< HEAD
 	int AssignId;
 	
 //	public int getAssignId() {
 //		return AssignId;
 //	}
+=======
+	private int AssignId;
+	
+	public int getAssignId() {
+		return AssignId;
+	}
+>>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
 
 	public void setAssignId(int assignId) {
 		AssignId = assignId;
@@ -35,6 +43,7 @@ public class AssignBean implements Serializable{
 	private int id;
 
 	@ManyToOne
+<<<<<<< HEAD
 	UserBean user;
 	
 	
@@ -42,6 +51,15 @@ public class AssignBean implements Serializable{
 //	public UserBean getUser() {
 //		return user;
 //	}
+=======
+	private UserBean user;
+	
+	
+	
+	public UserBean getUser() {
+		return user;
+	}
+>>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
 
 	public void setUser(UserBean user) {
 		this.user = user;
@@ -59,11 +77,19 @@ public class AssignBean implements Serializable{
 		this.id = id;
 	}
 	
+<<<<<<< HEAD
 //	public AssignBean(int id, UserBean user) {
 //		super();
 //		this.id = id;
 //		this.user = user;
 //	}
+=======
+	public AssignBean(int id, UserBean user) {
+		super();
+		this.id = id;
+		this.user = user;
+	}
+>>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
 
 	
 

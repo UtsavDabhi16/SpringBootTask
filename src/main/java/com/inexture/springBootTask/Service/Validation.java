@@ -17,12 +17,17 @@ import org.apache.log4j.Logger;
 import com.inexture.springBootTask.Model.AddressBean;
 import com.inexture.springBootTask.Model.UserBean;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
 public class Validation {
 
 	static final Logger LOG = Logger.getLogger(Validation.class);
 	private static SecretKeySpec secretKey;
 	private static byte[] key;
 
+<<<<<<< HEAD
 	public static void setKey(final String myKey) throws UnsupportedEncodingException, NoSuchAlgorithmException {
 		MessageDigest sha = null;
 
@@ -47,6 +52,35 @@ public class Validation {
 	public static String decrypt(final String strToDecrypt, final String secret)
 			throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IllegalBlockSizeException,
 			BadPaddingException, UnsupportedEncodingException {
+=======
+	public static void setKey(final String myKey) {
+		MessageDigest sha = null;
+		try {
+			key = myKey.getBytes("UTF-8");
+			sha = MessageDigest.getInstance("SHA-1");
+			key = sha.digest(key);
+			key = Arrays.copyOf(key, 16);
+			secretKey = new SecretKeySpec(key, "AES");
+		} catch (NoSuchAlgorithmException | UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static String encrypt(final String strToEncrypt, final String secret) {
+		try {
+			setKey(secret);
+			Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
+			cipher.init(Cipher.ENCRYPT_MODE, secretKey);
+			return Base64.getEncoder().encodeToString(cipher.doFinal(strToEncrypt.getBytes("UTF-8")));
+		} catch (Exception e) {
+			System.out.println("Error while encrypting: " + e.toString());
+		}
+		return null;
+	}
+
+	public static String decrypt(final String strToDecrypt, final String secret) throws NoSuchAlgorithmException,
+			NoSuchPaddingException, InvalidKeyException, IllegalBlockSizeException, BadPaddingException {
+>>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
 //	  try {
 		setKey(secret);
 		Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5PADDING");
