@@ -24,45 +24,58 @@
 
 	<dependencies>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 	
 >>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
+=======
+>>>>>>> 319f966123046e744cfd32eaed0b6f2eb34bd831
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 		
 >>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
+=======
+>>>>>>> 319f966123046e744cfd32eaed0b6f2eb34bd831
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-freemarker</artifactId>
 		</dependency>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 		
 >>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
+=======
+>>>>>>> 319f966123046e744cfd32eaed0b6f2eb34bd831
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
+<<<<<<< HEAD
 		
 <<<<<<< HEAD
 		
 =======
 >>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
+=======
+>>>>>>> 319f966123046e744cfd32eaed0b6f2eb34bd831
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			 <version>2.6.7</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
+<<<<<<< HEAD
 			<scope>provided</scope>
 		</dependency>
 <<<<<<< HEAD
@@ -70,6 +83,9 @@
 =======
 		
 >>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
+=======
+		</dependency>	
+>>>>>>> 319f966123046e744cfd32eaed0b6f2eb34bd831
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -84,59 +100,55 @@
 =======
 >>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context-support</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.29</version>
 		</dependency>
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 
 =======
 		
 >>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
+=======
+>>>>>>> 319f966123046e744cfd32eaed0b6f2eb34bd831
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>javax.xml.bind</groupId>
 			<artifactId>jaxb-api</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.hibernate.validator</groupId>
 			<artifactId>hibernate-validator</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>org.mindrot</groupId>
 			<artifactId>jbcrypt</artifactId>
 			<version>0.3m</version>
 		</dependency>
-
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
 		</dependency>
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 		<dependency>
@@ -145,25 +157,24 @@
 			<version>1.2</version>
 =======
 		
+=======
+>>>>>>> 319f966123046e744cfd32eaed0b6f2eb34bd831
 		<dependency>
 		    <groupId>jstl</groupId>
 		    <artifactId>jstl</artifactId>
 		    <version>1.2</version>
 >>>>>>> 206210ae71d3f20f7aff78ad0efd3f494ece7011
 		</dependency>
-
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.apache.maven.doxia</groupId>
 			<artifactId>doxia-site-renderer</artifactId>
 			<version>1.8.1</version>
 		</dependency>
-
 	</dependencies>
 
 	<build>
