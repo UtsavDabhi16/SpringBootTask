@@ -53,7 +53,7 @@ public class FrontController {
 	AddressBean aBean;
 
 	@RequestMapping({ "/", "/page" })
-	public String test() {
+	public String loginPage() {
 		return "login";
 	}
 
